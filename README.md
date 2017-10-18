@@ -20,6 +20,7 @@ Instance the inputbinder
 ```
 
 The parameters are as follows:
+	
 	- InputID: "inputbindid" 
 		- (used for getting the value out of the input field)
 	
