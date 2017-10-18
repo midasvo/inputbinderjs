@@ -5,7 +5,7 @@ Simple input binding to template text
 
 Include the .js file
 
-`<script src='inputbinderjs.js'></script>`
+`<script src='inputbinder.js'></script>`
 
 Create an input field
 

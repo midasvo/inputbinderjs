@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div class="header">
+    <h1>InputBinder.js examples</h1>
+    <span>
+      Shows the working of the inputbinder, complete with configuration.
+    </span>
+  </div>
+  <div class="page-content">
+    <div class="wrapper">
+      <div class="example1">
+        <h2>Example 1</h2>
+        <code>
+            var inputBinder = new inputBinder("example1input", ['b', 'p', 'span'], "#@example1templateplaceholder@#", "dynamic-text-template");
+        </code>
+        <hr>
+        <span>Example input 1: </span><input type="text" id="example1input" name="example1input" value="haha">
+        <div>
+          <p>Lorem ipsum bipsum #@example1templateplaceholder@#</p>
+          <code>#@example1templateplaceholder@# is not working because we are not targeting the 'code' element.</code>
+          <p>Lorem ipsum #@example1templateplaceholder@# kipsum</p>
+          <span>
+            Integer at rhoncus neque. Nunc #@example1templateplaceholder@# sed ex at finibus. Cras sed velit nec odio dignissim convallis ut vel felis. Integer quis mauris dapibus, pulvinar mauris sit amet, pellentesque ante. Maecenas et erat lectus. Vestibulum egestas mauris elit, ac auctor lorem suscipit a. Suspendisse nisi ipsum, dapibus ut rhoncus quis, posuere sit amet lorem. Nunc mi est, viverra sed <b>#@example1templateplaceholder@#</b> a, vestibulum quis velit. Phasellus et tincidunt ligula, et auctor purus. Sed in mollis lacus.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='../inputbinder.js'></script>
+  <script>
+  var inputBinder = new inputBinder("example1input", ['b', 'p', 'span'], "#@example1templateplaceholder@#", "dynamic-text-template");
+  </script>
+</body>
+
+</html>
