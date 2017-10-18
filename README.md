@@ -20,13 +20,18 @@ Instance the inputbinder
 ```
 
 The parameters are as follows:
+	- InputID: "inputbindid" 
+		- (used for getting the value out of the input field)
+	
+	- SearchTags: ['div', 'p'] 
+		- (array of html tags that will be searched and replaced, helps targetting specific elements of the page) 
+	
+	- InitialTemplateText: "#@initialinputtemplatetext@#" 
+		- (place this where you want the value to bind, will be replaced by a span with the class we can use)
+	
+	- TemplateClass: "dynamic-text-template" 
+		- (target class for replacing)
 
-(
-	InputID: "inputbindid" (used for getting the value out of the input field)
-	SearchTags: ['div', 'p'] (array of html tags that will be searched and replaced, helps targetting specific elements of the page) 
-	InitialTemplateText: "#@initialinputtemplatetext@#" (place this where you want the value to bind, will be replaced by a span with the class we can use)
-	TemplateClass: "dynamic-text-template" (target class for replacing)
-)
 
 #### Why
 
